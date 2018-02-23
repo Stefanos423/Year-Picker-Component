@@ -1,0 +1,32 @@
+.year-picker-container {
+  position: absolute;
+  top: 70px;
+  left: 16px;
+  width: 264px;
+  height: 196px;
+  margin-right: 166px;
+  
+  background: white;
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+
+  .decade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .years {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .arrows {
+    min-width: 39px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 16px;
+  }
+}

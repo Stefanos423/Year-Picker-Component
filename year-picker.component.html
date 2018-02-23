@@ -1,0 +1,20 @@
+<div class='year-picker-container' *ngIf='!isHidden' (clickOutside)='toggleVisibility()'>
+  <div class='decade'>
+    <a mat-button class='arrows' (click)='changeDecade(-10)'>
+      <i class='icon-arrow-left'></i>
+    </a>
+    <div class='decade-indication'>
+      {{ decadeIndication }}
+    </div>
+    <a mat-button class='arrows' (click)='changeDecade(10)'>        
+      <i class='icon-arrow-right' ></i>
+    </a>
+  </div>
+  <div class='years'>
+      <div *ngFor='let year of currentDecade'>
+        <a mat-button [disabled]='year === currentDecade[0] || year === currentDecade[11]'>
+          {{ year }}
+        </a>
+      </div>
+  </div>
+</div>
